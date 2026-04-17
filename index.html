@@ -8,14 +8,14 @@
 <style>
   :root {
     --bg: linear-gradient(135deg, #dbeafe, #e0f2fe);
-    --card: rgba(255,255,255,0.6);
+    --card: rgba(255,255,255,0.7);
     --text: #1e293b;
     --accent: #2563eb;
   }
 
   body.dark {
     --bg: linear-gradient(135deg, #0f172a, #1e293b);
-    --card: rgba(30,41,59,0.6);
+    --card: rgba(30,41,59,0.7);
     --text: #f1f5f9;
     --accent: #3b82f6;
   }
@@ -30,7 +30,7 @@
 
   header {
     text-align: center;
-    padding: 40px 20px 20px;
+    padding: 40px 20px 10px;
   }
 
   header h1 {
@@ -55,7 +55,7 @@
 
   .container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     gap: 25px;
     padding: 30px;
     max-width: 1100px;
@@ -92,8 +92,19 @@
   }
 
   .desc {
-    opacity: 0.8;
+    opacity: 0.85;
+    margin-bottom: 15px;
+  }
+
+  ul {
+    padding-left: 18px;
     margin-bottom: 20px;
+  }
+
+  ul li {
+    font-size: 0.9rem;
+    margin-bottom: 6px;
+    opacity: 0.85;
   }
 
   .btn {
@@ -104,6 +115,7 @@
     border-radius: 10px;
     font-weight: 500;
     transition: 0.3s;
+    display: inline-block;
   }
 
   .btn:hover {
@@ -125,22 +137,50 @@
 
 <header>
   <h1>Dhyana Suresh</h1>
-  <p>Frontend Projects</p>
+  <p>Digital Clock Challenge | Frontend Projects</p>
 </header>
 
 <div class="container">
 
+  <!-- LEVEL 1 -->
   <div class="card">
     <div class="level">Level 1</div>
     <div class="title">🕒 Text-Based Clock</div>
-    <div class="desc">A responsive digital clock using text rendering with real-time updates.</div>
+
+    <div class="desc">
+      A real-time digital clock built using HTML, CSS, and JavaScript that displays the current time (hours, minutes, seconds) using text formatting. The clock updates every second and is styled to be centered and responsive.
+    </div>
+
+    <ul>
+      <li>Working with JavaScript Date object</li>
+      <li>Using setInterval() for real-time updates</li>
+      <li>Formatting time (HH:MM:SS)</li>
+      <li>DOM manipulation (innerText)</li>
+      <li>CSS Flexbox for centering</li>
+      <li>Responsive layout design</li>
+    </ul>
+
     <a class="btn" href="text-clock/index.html">View Project</a>
   </div>
 
+  <!-- LEVEL 2 -->
   <div class="card">
     <div class="level">Level 2</div>
     <div class="title">💡 Seven Segment Clock</div>
-    <div class="desc">LED-style clock built using pure HTML, CSS, and JavaScript animations.</div>
+
+    <div class="desc">
+      A digital clock designed using custom-built seven-segment displays created with HTML div elements. Each digit is dynamically rendered using JavaScript logic to simulate LED-style segments, with smooth transitions and animations.
+    </div>
+
+    <ul>
+      <li>Building UI using pure HTML structures</li>
+      <li>Mapping digits to segment logic</li>
+      <li>Modular JavaScript design</li>
+      <li>CSS styling for LED effects</li>
+      <li>Animations and transitions</li>
+      <li>Improved UI/UX structuring</li>
+    </ul>
+
     <a class="btn" href="seven-segment-clock/index.html">View Project</a>
   </div>
 
